@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="quote-section">
+      <div class="quote-container">
+        <p id="quote-text">"Proqramlaşdırma sehr kimidir..."</p>
+        <h5 id="quote-author">- Kimsə</h5>
+      </div>
+      <button id="refresh-quote">
+        <img src="assets/desktop/icon-refresh.svg" alt="Yenilə">
+      </button>
+    </section>
+
+    <section class="clock-section">
+      <div class="greeting">
+        <img id="greeting-icon" src="assets/desktop/icon-sun.svg" alt="Sun">
+        <h4 id="greeting-text">GOOD MORNING</h4>
+      </div>
+      <div class="time-display">
+        <h1 id="time">00:00</h1>
+        <p id="timezone">AZT</p>
+      </div>
+      <h3 id="location">in Baku, AZ</h3>
+      
+      <button id="toggle-btn">
+        <span id="btn-text">MORE</span>
+        <div class="arrow-bg"><img id="arrow-icon" src="assets/desktop/icon-arrow-down.svg" alt="arrow"></div>
+      </button>
+    </section>
+  </main>
+
+  <section class="details-panel hidden" id="details">
+    <div class="detail-item">
+      <h6>CURRENT TIMEZONE</h6>
+      <h2 id="detail-timezone">Europe/Baku</h2>
+    </div>
+    <div class="detail-item">
+      <h6>DAY OF THE YEAR</h6>
+      <h2 id="detail-day-year">0</h2>
+    </div>
+    <div class="detail-item">
+      <h6>DAY OF THE WEEK</h6>
+      <h2 id="detail-day-week">0</h2>
+    </div>
+    <div class="detail-item">
+      <h6>WEEK NUMBER</h6>
+      <h2 id="detail-week-num">0</h2>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
